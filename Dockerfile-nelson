@@ -1,0 +1,7 @@
+FROM node:alpine
+
+RUN yarn global add nelson.cli
+
+USER node
+
+ENTRYPOINT ["nelson"]
